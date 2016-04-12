@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AppListCell" customModule="HAppList_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgz-Xc-npa">
+                        <rect key="frame" x="8" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="dZh-8B-UZD"/>
+                            <constraint firstAttribute="width" constant="60" id="rVg-Yg-dOe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yml-f4-cQz">
+                        <rect key="frame" x="78" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbS-f4-Wbw">
+                        <rect key="frame" x="78" y="40" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzl-br-WwR">
+                        <rect key="frame" x="272" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9F4-7g-DGf"/>
+                            <constraint firstAttribute="width" constant="40" id="9OM-q9-XpU"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="starAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iiG-oY-p8v"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2C-nz-UQ0">
+                        <rect key="frame" x="280" y="44" width="30" height="30"/>
+                        <state key="normal" title="GET"/>
+                        <connections>
+                            <action selector="downloadAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Yvh-6t-M7b"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zgz-Xc-npa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0xZ-7Z-Ci9"/>
+                    <constraint firstAttribute="trailing" secondItem="Gzl-br-WwR" secondAttribute="trailing" constant="8" id="1QI-dr-BjF"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="yml-f4-cQz" secondAttribute="trailing" constant="50" id="3gP-nB-Wkl"/>
+                    <constraint firstAttribute="bottom" secondItem="cbS-f4-Wbw" secondAttribute="bottom" constant="18" id="AmS-HJ-kmo"/>
+                    <constraint firstItem="yml-f4-cQz" firstAttribute="leading" secondItem="Zgz-Xc-npa" secondAttribute="trailing" constant="10" id="EqJ-XI-pMF"/>
+                    <constraint firstItem="Zgz-Xc-npa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Gti-9C-tmf"/>
+                    <constraint firstAttribute="trailing" secondItem="j2C-nz-UQ0" secondAttribute="trailing" constant="10" id="IZp-SI-0yr"/>
+                    <constraint firstAttribute="bottom" secondItem="j2C-nz-UQ0" secondAttribute="bottom" constant="5" id="KdM-Y9-Igx"/>
+                    <constraint firstItem="cbS-f4-Wbw" firstAttribute="leading" secondItem="Zgz-Xc-npa" secondAttribute="trailing" constant="10" id="Xt7-HZ-bSz"/>
+                    <constraint firstItem="Gzl-br-WwR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aZt-0z-9pq"/>
+                    <constraint firstItem="yml-f4-cQz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lyv-m0-Bvz"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="cbS-f4-Wbw" secondAttribute="trailing" constant="50" id="mOQ-E8-4qW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDownLoad" destination="j2C-nz-UQ0" id="L2K-kZ-h8j"/>
+                <outlet property="btnStar" destination="Gzl-br-WwR" id="97Z-WL-LXW"/>
+                <outlet property="imgIcon" destination="Zgz-Xc-npa" id="mPu-6K-Vnr"/>
+                <outlet property="lbAppName" destination="yml-f4-cQz" id="yBb-pr-C3C"/>
+                <outlet property="lbArtistName" destination="cbS-f4-Wbw" id="bTr-nQ-aoF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
